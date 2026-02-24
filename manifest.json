@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Old YouTube Subscriptions List",
+  "description": "Forces YouTube subscriptions feed into a vertical list view.",
+  "version": "0.1.0",
+  "browser_specific_settings": {
+    "gecko": {
+      "strict_min_version": "121.0"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.youtube.com/feed/subscriptions*"
+      ],
+      "js": [
+        "src/content/subscriptions-list.js"
+      ],
+      "css": [
+        "src/content/subscriptions-list.css"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}

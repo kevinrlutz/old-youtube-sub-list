@@ -1,0 +1,27 @@
+html.oysl-subscriptions-list ytd-browse[page-subtype="subscriptions"][data-oysl-list-enabled="true"] ytd-rich-grid-renderer {
+  --ytd-rich-grid-items-per-row: 1 !important;
+  --ytd-rich-grid-posts-per-row: 1 !important;
+}
+
+html.oysl-subscriptions-list ytd-browse[page-subtype="subscriptions"][data-oysl-list-enabled="true"] ytd-rich-grid-renderer #contents.ytd-rich-grid-renderer {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: stretch !important;
+  margin: 0 !important;
+}
+
+html.oysl-subscriptions-list ytd-browse[page-subtype="subscriptions"][data-oysl-list-enabled="true"] ytd-rich-grid-renderer #contents.ytd-rich-grid-renderer > ytd-rich-item-renderer {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 0 16px 0 !important;
+}
+
+html.oysl-subscriptions-list ytd-browse[page-subtype="subscriptions"][data-oysl-list-enabled="true"] ytd-rich-grid-renderer #contents.ytd-rich-grid-renderer > ytd-continuation-item-renderer,
+html.oysl-subscriptions-list ytd-browse[page-subtype="subscriptions"][data-oysl-list-enabled="true"] ytd-rich-grid-renderer #contents.ytd-rich-grid-renderer > ytd-rich-section-renderer {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+html.oysl-subscriptions-list ytd-browse[page-subtype="subscriptions"][data-oysl-list-enabled="true"] ytd-rich-grid-renderer #header {
+  width: 100% !important;
+}
